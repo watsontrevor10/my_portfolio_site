@@ -3,7 +3,7 @@ import { Header, } from 'semantic-ui-react'
 
 const About = () => (
   <div>
-    <Header as='h2'>About Me</Header>
+    <Header as='h2' textAlign='center'>About Me</Header>
   </div>
 )
 
