@@ -6,7 +6,7 @@ import Interests from './components/Interests'
 import Contact from './components/Contact'
 import NoMatch from './components/NoMatch'
 import { Route, Switch, } from 'react-router-dom'
-import { Container, Grid } from 'semantic-ui-react'
+import { Container, Grid, } from 'semantic-ui-react'
 
 
 const App = () => (
