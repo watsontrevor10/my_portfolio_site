@@ -10,10 +10,8 @@ import { Container } from 'semantic-ui-react'
 
 
 const App = () => (
-  
   <>
-    <Navbar />
-    <Container>
+      <Navbar />
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
@@ -22,7 +20,6 @@ const App = () => (
 
         <Route component={NoMatch} />
       </Switch>
-    </Container>
   </>
 )
 
