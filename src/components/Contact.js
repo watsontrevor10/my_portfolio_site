@@ -3,7 +3,7 @@ import { Header, } from 'semantic-ui-react'
 
 const Contact = () => (
   <div>
-    <Header as='h2'>Contact Me</Header>
+    <Header as='h2' textAlign='center'>Contact Me</Header>
   </div>
 )
 

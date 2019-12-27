@@ -10,7 +10,11 @@ const Navbar = () => {
         <Link to='/'>
           <Menu.Header as='h1' textAlign='center'>Trevor Watson</Menu.Header>
           <Menu.Item 
-            content={<Image src='https://scontent-den4-1.xx.fbcdn.net/v/t31.0-8/p960x960/12028618_10153611247155270_1724168919915248315_o.jpg?_nc_cat=105&_nc_ohc=yzrpOrZAueYAQmHbxrTu5Z65JXjIaEIcxFQxMMWgGBKnaaSJtTPYAuojQ&_nc_ht=scontent-den4-1.xx&oh=5b6994a972598bf67facf7f7e7da4631&oe=5E7120B3' />}
+            content={
+              <Image 
+                src='https://scontent-den4-1.xx.fbcdn.net/v/t31.0-8/p960x960/12028618_10153611247155270_1724168919915248315_o.jpg?_nc_cat=105&_nc_ohc=yzrpOrZAueYAQmHbxrTu5Z65JXjIaEIcxFQxMMWgGBKnaaSJtTPYAuojQ&_nc_ht=scontent-den4-1.xx&oh=5b6994a972598bf67facf7f7e7da4631&oe=5E7120B3' 
+
+                />}
             active={activeItem === 'home'}
             onClick={() => setActiveItem('home')}
           />

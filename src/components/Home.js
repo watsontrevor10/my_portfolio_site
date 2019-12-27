@@ -1,5 +1,6 @@
 import React, { useState, } from 'react'
-import {Header, } from 'semantic-ui-react'
+import {Header, Image, } from 'semantic-ui-react'
+import tetons from '../assets/tetons.jpg'
 // import { Link } from 'react-router-dom'
 // import About from '../components/About'
 // import Contact from '../components/Contact'
@@ -7,7 +8,10 @@ import {Header, } from 'semantic-ui-react'
 
 const Home = () => (
     <div>
-      <Header as='h2'>Home</Header >
+      <Header sub textAlign='center'>
+        Developer |  Musician  |  Writer  |  Photographer
+      </Header>
+      <Image src={tetons} fluid alt='mountain photo' />
     </div>
   )
 
