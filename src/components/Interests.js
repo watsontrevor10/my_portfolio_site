@@ -1,5 +1,5 @@
 import React, { useState, } from 'react'
-import { Header, Container, Button, } from 'semantic-ui-react'
+import { Header, Container, Button, Card, Segment, } from 'semantic-ui-react'
 
 const musicLines = [
   'I’ve been playing bass guitar since I was 10',
@@ -35,10 +35,14 @@ const Interests = () => {
     <div>
       <Header as='h2' textAlign='center'>Interests</Header>
       <br />
-      <Header as='h3'>Photography</Header>
+      <Segment inverted color='teal' raised >
+        <Header as='h3'>Photography</Header>
+      </Segment>
       {/* Carousel showcasing photos, description of photography passion */}
       
-      <Header as='h3'>Music</Header>
+      <Segment inverted color='teal' raised >
+        <Header as='h3'>Music</Header>
+      </Segment>
       {/* Description of musical history, passions, link to 3# page, some photos */}
       <Container as='a' onClick={() => musicIncrement()}>
         <Header as='h3' textAlign='center'>{musicLines[musicIndex]}</Header>
@@ -47,7 +51,10 @@ const Interests = () => {
         Next
       </Button>
 
-      <Header as='h3'>Writing</Header>
+      <Segment inverted color='teal' raised >
+        <Header as='h3'>Writing</Header>
+
+      </Segment>
       {/* Description of what I write and why I write, some examples of things I've written professionally */}
       {/* Link to https://chivsjawn.wordpress.com/ */}
     </div>
