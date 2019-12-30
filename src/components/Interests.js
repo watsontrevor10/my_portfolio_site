@@ -1,5 +1,5 @@
 import React, { useState, } from 'react'
-import { Header, Container, Button, Card, Segment, } from 'semantic-ui-react'
+import { Header, Container, Button, Segment, } from 'semantic-ui-react'
 
 const musicLines = [
   'I’ve been playing bass guitar since I was 10',

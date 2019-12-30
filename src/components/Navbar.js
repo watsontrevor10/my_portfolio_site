@@ -1,7 +1,7 @@
 import React, { useState, } from 'react'
 import { Menu, Icon, Dropdown, } from 'semantic-ui-react'
 import { useWindowWidth, } from '../hooks/windowWidth'
-import trevor from './assets/trevor.jpg'
+// import trevor from './assets/trevor.jpg'
 
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState('home')

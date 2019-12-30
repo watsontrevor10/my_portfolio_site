@@ -1,19 +1,18 @@
 import React from 'react'
-import { Segment, Icon, Button, } from 'semantic-ui-react'
-import { Link } from 'react-router-dom'
+import { Segment, Icon, } from 'semantic-ui-react'
 
 
 const Contact = () => (
   <div>
     <Segment raised textAlign='center'>
       <a href='https://www.linkedin.com/in/trevorjwatson/' target='_blank' >
-        <Icon name='linkedin' size='massive' color='black' link />
+        <Icon name='linkedin' size='massive' color='blue' link />
       </a> 
       <a href='https://twitter.com/chivsjawn' target='_blank'>
-        <Icon name='twitter' size='massive' color='black' />       
+        <Icon name='twitter' size='massive' color='blue' link />       
       </a>
       <a href='https://github.com/watsontrevor10' target='_blank'>
-        <Icon name='github' size='massive' color='black' />       
+        <Icon name='github' size='massive' color='black' link />       
       </a>
     </Segment>
     <Segment textAlign='center' raised>

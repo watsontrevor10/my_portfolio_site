@@ -7,6 +7,9 @@ import xant from './assets/xant.png'
 import semanticLogo from './assets/semantic.png'
 import railsLogo from './assets/rails.png'
 import reactLogo from './assets/react-logo.png'
+import byulogo from './assets/byulogo.png'
+import armylogo from './assets/armylogo.png'
+import dpllogo from './assets/dpllogo.png'
 
 const About = () => (
   <div>
@@ -107,21 +110,46 @@ const About = () => (
       </Header>
     </Segment>
     <Card.Group>
-        <Card 
-          header='Brigham Young University'
-          meta='Bachelor of Art - Music'
-          color='green'
-        />
-        <Card 
-          header='Army School of Music'
-          meta='Honors Graduate'
-          color='green'
-        />
-        <Card 
-          header='DevPoint Labs - University of Utah'
-          meta='Full-stack Web Development Certificate'
-          color='green'
-        />
+        <Card color='green'>
+          <Card.Content textAlign='center' >
+            <Image src={byulogo} size='tiny' />
+          </Card.Content>
+
+          <Card.Content>
+            <Card.Header>Brigham Young University</Card.Header>
+            <Card.Meta>Bachelor of Art - Music</Card.Meta>
+          </Card.Content>
+        </Card>      
+        <Card color='green'>
+          <Card.Content textAlign='center'>
+            <Image src={armylogo} size='tiny' />
+          </Card.Content>
+
+          <Card.Content>
+            <Card.Header>
+              Army School of Music
+            </Card.Header>
+            <Card.Meta>
+              Honors Graduate
+            </Card.Meta>
+          </Card.Content>
+
+         
+        </Card>
+      
+        <Card color='green'>
+          <Card.Content textAlign='center' >
+            <Image src={dpllogo} size='tiny' />
+          </Card.Content>
+          <Card.Content>
+            <Card.Header>
+              DevPoint Labs - University of Utah
+            </Card.Header>
+            <Card.Meta>
+              Full-stack Web Development Certificate
+            </Card.Meta>
+          </Card.Content>
+        </Card>
     </Card.Group>
     <Divider />
 
