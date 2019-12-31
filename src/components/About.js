@@ -152,7 +152,6 @@ const About = () => (
           </Card.Content>
         </Card>
     </Card.Group>
-    <Divider /> 
   </div>
 )
 
