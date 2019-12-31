@@ -14,7 +14,7 @@ const About = () => (
     {/* Work History Section */}
     <Segment inverted color='teal' size='huge'>
       <Header as='h3' id='hist'>
-        Work History
+        Experience
       </Header>
     </Segment>
     <br />  
