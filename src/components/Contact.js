@@ -29,8 +29,8 @@ const Contact = () => (
           <Segment textAlign='center' raised>
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLScKypyhlI5FmPngKCuBfIFqfIlyY3ScWXO9LjATvtsbnwQ2fQ/viewform?embedded=true" 
-              width="540" 
-              height="677" 
+              width= '100%'
+              height='600px' 
               frameborder="0" 
               marginheight="0" 
               marginwidth="0"
