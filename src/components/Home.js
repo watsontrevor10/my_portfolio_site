@@ -65,8 +65,6 @@ const Home = () => (
     </div>
   )
 
-
-
   const styleTitle = {
     fontSize: 45,
     textAlign: 'center',

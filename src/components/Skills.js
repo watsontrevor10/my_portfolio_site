@@ -11,9 +11,9 @@ import postgres from './assets/postgres.png'
 const Skills = () => (
   <div>
     <Segment inverted color='teal' size='huge'>
-    <Header as='h3' id='skills'>
-      Skills
-    </Header>
+      <Header as='h3' id='skills'>
+        Skills
+      </Header>
     </Segment>
 
     {/* Development languages and frameworks */}
@@ -55,27 +55,29 @@ const Skills = () => (
     <Header style={subsectionStyle}>
       Platforms
     </Header>
+
     <Card.Group itemsPerRow={4} doubling>
-    {/* DOMO Analytics */}
-    <Card color='blue'>
-      <Card.Content style={skillStyle} >
-        <Image src={domo} size='small' />
-      </Card.Content>
-    </Card>
 
-    {/* Salesforce */}
-    <Card color='blue'>
-      <Card.Content style={skillStyle} >
-        <Image src={salesforce} size='small' />
-      </Card.Content>
-    </Card>
+      {/* DOMO Analytics */}
+      <Card color='blue'>
+        <Card.Content style={skillStyle} >
+          <Image src={domo} size='small' />
+        </Card.Content>
+      </Card>
 
-    {/* Lightroom */}
-    <Card color='blue'>
-      <Card.Content style={skillStyle} >
-        <Image src={lightroom} size='small' />
-      </Card.Content>
-    </Card>
+      {/* Salesforce */}
+      <Card color='blue'>
+        <Card.Content style={skillStyle} >
+          <Image src={salesforce} size='small' />
+        </Card.Content>
+      </Card>
+
+      {/* Lightroom */}
+      <Card color='blue'>
+        <Card.Content style={skillStyle} >
+          <Image src={lightroom} size='small' />
+        </Card.Content>
+      </Card>
     </Card.Group>
   </div>
 )

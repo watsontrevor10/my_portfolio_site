@@ -98,7 +98,7 @@ const About = () => (
 
     <br />
     <Label as='a' color='teal' image>
-      <a href='https://www.linkedin.com/in/trevorjwatson/' target='_blank' >
+      <a href='https://www.linkedin.com/in/trevorjwatson/' target='_blank' rel='noopener noreferrer'>
         <Icon link name='linkedin' />  
         See More
       </a>
@@ -159,8 +159,4 @@ const About = () => (
   </div>
 )
 
-const skillStyle = {
-  textAlign: 'center',
-  verticalAlign: 'middle',
-}
 export default About
