@@ -16,6 +16,7 @@ const Home = () => (
           <Grid.Column textAlign='center' verticalAlign='middle'>
             <Image src={trevor}  size='medium' centered />
           </Grid.Column>
+
           <Grid.Column verticalAlign='middle'>
             <Segment inverted>
               <Header inverted>
@@ -26,7 +27,8 @@ const Home = () => (
               </Header>
               <br/>        
             </Segment>     
-          </Grid.Column>    
+          </Grid.Column> 
+
           <Grid.Column textAlign='center' verticalAlign='middle' only='computer tablet' >
             <Image src={family} centered />  
           </Grid.Column>   
@@ -55,16 +57,16 @@ const Home = () => (
         {/* Render Components */}
         <About />
           <Divider />
-
         <Skills />
           <Divider />
         <Projects />
-        <Divider />
+          <Divider />
         <Contact />
       </Container>
     </div>
   )
 
+  // Styles functions
   const styleTitle = {
     fontSize: 45,
     textAlign: 'center',

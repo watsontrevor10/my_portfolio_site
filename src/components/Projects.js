@@ -8,9 +8,18 @@ const Projects = () => (
         Projects
       </Header>
     </Segment>
-    <br />
-    <Header as='h5'>Future Projects</Header>
+    
+    {/* Future Projects */}
+    <Header style={subsectionStyle}>
+      Future Projects
+    </Header>
+    <br/>
     <Card.Group>
+      <Card 
+        header='DevPoint Capstone Project'
+        description='Coming in January 2020'
+        color='red'
+      />
       <Card 
         header='Music Lesson Manager'
         description='A CRM-like system for managing students of private music teaching studios. 
@@ -26,5 +35,10 @@ const Projects = () => (
       </Card.Group>
   </div> 
 )
+
+const subsectionStyle = {
+  textSize: 30,
+  textAlign: 'center'
+}
 
 export default Projects

@@ -1,3 +1,5 @@
+// beginning concept design for visual story-telling.  Got the basic components set up, need to figure out transitions and animations
+
 import React, { useState, } from 'react'
 import { Header, Container, Button, Segment, } from 'semantic-ui-react'
 

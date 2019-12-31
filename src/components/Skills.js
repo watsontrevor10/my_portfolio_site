@@ -44,6 +44,7 @@ const Skills = () => (
         </Card.Content>
       </Card>
 
+      {/* Postgresql */}
       <Card color='blue'>
         <Card.Content style={skillStyle}>
           <Image src={postgres} size='small' />

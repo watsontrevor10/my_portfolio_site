@@ -6,7 +6,9 @@ const Navbar = () => {
   const [activeItem, setActiveItem] = useState('home')
   const width = useWindowWidth()
   
+  // Responsive navbar
   if (width <= 1000) {
+    // Mobile version of navbar
     return (
       <Menu size='mini' icon attached='top' compact>
         <Dropdown item icon='bars' simple>
@@ -71,6 +73,7 @@ const Navbar = () => {
       </Menu>
     )
   } else {
+    // Navbar for larger screens
     return (
       <Menu size='tiny' compact attached='top' icon='labeled'>
           <a href='#hist'>

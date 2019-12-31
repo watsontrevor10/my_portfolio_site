@@ -10,6 +10,7 @@ import dpllogo from './assets/dpllogo.png'
 
 const About = () => (
   <div>
+    
     {/* Work History Section */}
     <Segment inverted color='teal' size='huge'>
       <Header as='h3' id='hist'>
@@ -32,10 +33,10 @@ const About = () => (
           <Divider />
           <Card.Description>
             {[
-            'Sergeant and Principal Bassist for the 23rd Army Band.',
-            'Perform national and international tours, balls, ceremonies, ',
-            'and concerts for military, civilian, and patriotic events.'
-          ].join(' ')}
+              'Sergeant and Principal Bassist for the 23rd Army Band.',
+              'Perform national and international tours, balls, ceremonies, ',
+              'and concerts for military, civilian, and patriotic events.'
+            ].join(' ')}
           </Card.Description>
         </Card.Content>
       </Card>
@@ -106,6 +107,7 @@ const About = () => (
 
     <Divider />
 
+    {/* Education Section */}
     <Segment inverted color='teal' size='huge'>
       <Header as='h3' id='edu'>
         Education
@@ -116,17 +118,16 @@ const About = () => (
           <Card.Content textAlign='center' >
             <Image src={byulogo} size='tiny' />
           </Card.Content>
-
           <Card.Content>
             <Card.Header>Brigham Young University</Card.Header>
             <Card.Meta>Bachelor of Art - Music</Card.Meta>
           </Card.Content>
-        </Card>      
+        </Card>  
+
         <Card color='green'>
           <Card.Content textAlign='center'>
             <Image src={armylogo} size='tiny' />
           </Card.Content>
-
           <Card.Content>
             <Card.Header>
               Army School of Music
@@ -135,8 +136,6 @@ const About = () => (
               Honors Graduate
             </Card.Meta>
           </Card.Content>
-
-         
         </Card>
       
         <Card color='green'>
@@ -153,9 +152,7 @@ const About = () => (
           </Card.Content>
         </Card>
     </Card.Group>
-    <Divider />
-
-    
+    <Divider /> 
   </div>
 )
 
