@@ -4,10 +4,13 @@ import { Segment, Icon, } from 'semantic-ui-react'
 
 const Contact = () => (
   <div>
-    <Segment raised textAlign='center'>
+    <Segment raised textAlign='center' id='contact'>
       <a href='https://www.linkedin.com/in/trevorjwatson/' target='_blank' >
         <Icon name='linkedin' size='massive' color='blue' link />
-      </a> 
+      </a>   
+      <a href='https://www.instagram.com/chivsjawnphoto' target='_blank'>
+        <Icon name='instagram' size='massive' color='violet' link />
+      </a>
       <a href='https://twitter.com/chivsjawn' target='_blank'>
         <Icon name='twitter' size='massive' color='blue' link />       
       </a>

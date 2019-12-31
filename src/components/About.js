@@ -4,23 +4,19 @@ import filevine from './assets/filevine.png'
 import nuvi from './assets/nuvi.png'
 import utng from './assets/utng.png'
 import xant from './assets/xant.png'
-import semanticLogo from './assets/semantic.png'
-import railsLogo from './assets/rails.png'
-import reactLogo from './assets/react-logo.png'
 import byulogo from './assets/byulogo.png'
 import armylogo from './assets/armylogo.png'
 import dpllogo from './assets/dpllogo.png'
 
 const About = () => (
   <div>
+    {/* Work History Section */}
     <Segment inverted color='teal' size='huge'>
       <Header as='h3' id='hist'>
         Work History
       </Header>
     </Segment>
-
-    <br />
-    
+    <br />  
     <Card.Group>
       <Card color='orange' raised fluid>
         <Card.Content>
@@ -33,9 +29,10 @@ const About = () => (
           <Card.Header>
             Army Bandsman
           </Card.Header>
+          <Divider />
           <Card.Description>
             {[
-            'Principal bassist for the 23rd Army Band.',
+            'Sergeant and Principal Bassist for the 23rd Army Band.',
             'Perform national and international tours, balls, ceremonies, ',
             'and concerts for military, civilian, and patriotic events.'
           ].join(' ')}
@@ -50,12 +47,13 @@ const About = () => (
           <Card.Header>
             Enterprise Implementation Consultant
           </Card.Header>
+          <Divider />
           <Card.Description>
           {[
             'Enterprise technical consultant and project manager for law firms nationwide. ',
-            'Consulting on setup of case management system, coordinated database migrations, ',
-            'and managed the implementation of the client.  Coordinated with the client; the sales, ',
-            'data migrations, product management, and client success teams to successfully implement clinets.'
+            'Consulting on setup of case management systems, coordinated database migrations, ',
+            'and managed the implementation of the client.  Coordinated with the client as well as the sales, ',
+            'data migrations, product management, and client success teams to successfully implement clients.'
           ].join(' ')}
           </Card.Description>
         </Card.Content>
@@ -67,6 +65,7 @@ const About = () => (
           <Card.Header>
             Enterprise Solutions Consultant
           </Card.Header>
+          <Divider />
           <Card.Description>
             {[
               'Enterprise strategic consultant for sales reps, enterprise prospects, and clients. ',
@@ -86,6 +85,7 @@ const About = () => (
               <li>Solutions Consultanting Architect</li>
             </ul>
           </Card.Header>
+          <Divider />
           <Card.Description>
             {[
               'Worked in a variety of roles, including technical support, Solutions Consultant. ',
@@ -98,8 +98,10 @@ const About = () => (
 
     <br />
     <Label as='a' color='teal' image>
-      <Icon link name='linkedin' />  
-      See More
+      <a href='https://www.linkedin.com/in/trevorjwatson/' target='_blank' >
+        <Icon link name='linkedin' />  
+        See More
+      </a>
     </Label>
 
     <Divider />
@@ -153,59 +155,12 @@ const About = () => (
     </Card.Group>
     <Divider />
 
-    <Segment inverted color='teal' size='huge'>
-      <Header as='h3' id='skills'>
-        Skills
-      </Header>
-    </Segment>
-    <Card.Group>
-      <Card color='blue'>
-        <Card.Content textAlign='center'>
-          <Image 
-            src={railsLogo}
-          />
-          {/* <Card.Header>Ruby on Rails</Card.Header> */}
-        </Card.Content>
-      </Card>
-      <Card color='blue'>
-        <Card.Content textAlign='center'>
-          <Image 
-            src={reactLogo}
-          />
-          {/* <Card.Header>React.js</Card.Header> */}
-        </Card.Content>
-      </Card>
-      <Card color='blue'>
-        <Card.Content textAlign='center'>
-          <Image src={semanticLogo} size='small' />
-        </Card.Content>
-      </Card>
-    </Card.Group>
-
-    <Divider />
-
-    <Segment inverted color='teal' size='huge'>
-      <Header as='h3' id='proj'>
-        Projects
-      </Header>
-    </Segment>
-    <br />
-    <Header as='h5'>Future Projects</Header>
-    <Card.Group>
-      <Card 
-        header='Music Lesson Manager'
-        description='A CRM-like system for managing students of private music teaching studios. 
-        Calendar management, contacts, invoicing, and payment tracking are the essentials for this app.'
-        color='red'
-      />
-      <Card 
-        header='Adventures with Jim'
-        description='A tour guide booking site for my father-in-law.  
-        Jim goes on the best adventures, and knows the best places that are well off the beaten path.'
-        color='red'
-      />
-    </Card.Group>
+    
   </div>
 )
 
+const skillStyle = {
+  textAlign: 'center',
+  verticalAlign: 'middle',
+}
 export default About

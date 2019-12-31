@@ -19,7 +19,7 @@ const Navbar = () => {
                   active={activeItem === 'work'}
                   onClick={() => setActiveItem('work')}
                 >
-                  <Icon name='suitcase' fixed='left' />
+                  <Icon name='suitcase' />
                 </Menu.Item>
               </a>
             </Dropdown.Item>
@@ -30,7 +30,7 @@ const Navbar = () => {
                   active={activeItem === 'Education'}
                   onClick={() => setActiveItem('Education')}
                 >
-                  <Icon name='graduation cap' fixed='left' />
+                  <Icon name='graduation cap' />
                 </Menu.Item>
               </a>
             </Dropdown.Item>
@@ -41,7 +41,7 @@ const Navbar = () => {
                   active={activeItem === 'skills'}
                   onClick={() => setActiveItem('skills')}
                 >
-                  <Icon name='star' fixed='left' />
+                  <Icon name='star' />
                 </Menu.Item>
               </a>
             </Dropdown.Item>
@@ -52,7 +52,18 @@ const Navbar = () => {
                   active={activeItem === 'projects'}
                   onClick={() => setActiveItem('projects')}
                 >
-                  <Icon name='wrench' fixed='left' />  
+                  <Icon name='wrench' />  
+                </Menu.Item>    
+              </a>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <a href='#contact'>
+                <Menu.Item 
+                  name='Contact'
+                  active={activeItem === 'Contact'}
+                  onClick={() => setActiveItem('Contact')}
+                >
+                  <Icon name='mail' />  
                 </Menu.Item>    
               </a>
             </Dropdown.Item>
@@ -69,7 +80,7 @@ const Navbar = () => {
               active={activeItem === 'work'}
               onClick={() => setActiveItem('work')}
             >
-              <Icon name='suitcase' fixed='left' />
+              <Icon name='suitcase' />
               Work
             </Menu.Item>
           </a>
@@ -79,7 +90,7 @@ const Navbar = () => {
               active={activeItem === 'Education'}
               onClick={() => setActiveItem('Education')}
             >
-              <Icon name='graduation cap' fixed='left' />
+              <Icon name='graduation cap' />
               Education
             </Menu.Item>
           </a>
@@ -89,7 +100,7 @@ const Navbar = () => {
               active={activeItem === 'skills'}
               onClick={() => setActiveItem('skills')}
             >
-              <Icon name='star' fixed='left' />
+              <Icon name='star' />
               Skills
             </Menu.Item>
           </a>
@@ -99,10 +110,22 @@ const Navbar = () => {
               active={activeItem === 'projects'}
               onClick={() => setActiveItem('projects')}
             >
-              <Icon name='wrench' fixed='left' />  
+              <Icon name='wrench' />  
               Projects
             </Menu.Item>    
           </a>
+          <Menu.Menu position='right'>
+            <a href='#contact'>
+              <Menu.Item 
+                name='Contact'
+                active={activeItem === 'Contact'}
+                onClick={() => setActiveItem('Contact')}
+              >
+                <Icon name='mail' />  
+                Contact Me
+              </Menu.Item>    
+            </a>
+          </Menu.Menu>
       </Menu>
     )
   }

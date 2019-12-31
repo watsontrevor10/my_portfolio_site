@@ -1,31 +1,46 @@
 import React from 'react'
 import About from './About'
-import Interests from './Interests'
+import Skills from './Skills'
+import Projects from './Projects'
 import Contact from './Contact'
-import { Divider, Header, Container, Segment, Image, } from 'semantic-ui-react'
+import { Divider, Header, Container, Segment, Image, Grid, } from 'semantic-ui-react'
 import trevor from './assets/trevor.jpg'
+import family from './assets/family.jpeg'
 
-
+// About page covering: Work history and Education
 const Home = () => (
     <div>
-      <Segment>
-        <Header>
-          <h1 style={styleTitle}>Trevor Watson</h1>
-        </Header>
-        <Header sub textAlign='center'>
-          Developer | Musician | Photographer | Writer
-        </Header>
-        <br/>
-        <Image src={trevor} size='medium' centered />
+      {/* Header banner */}
+      <Segment inverted>
+        <Grid stackable columns={3} >
+          <Grid.Column textAlign='center' verticalAlign='middle'>
+            <Image src={trevor}  size='medium' centered />
+          </Grid.Column>
+          <Grid.Column verticalAlign='middle'>
+            <Segment inverted>
+              <Header inverted>
+                <h1 style={styleTitle}>Trevor Watson</h1>
+              </Header>
+              <Header sub inverted textAlign='center'>
+                Developer | Musician | Photographer | Writer
+              </Header>
+              <br/>        
+            </Segment>     
+          </Grid.Column>    
+          <Grid.Column textAlign='center' verticalAlign='middle' only='computer tablet' >
+            <Image src={family} centered />  
+          </Grid.Column>   
+        </Grid>
       </Segment>
-      
-      <br/>
+
+      {/* Bio */}
       <Container>
         <p style={paragraphStyle}>
           I am passionate about learning new things and solving problems in a creative way.
         </p>
         <p style={paragraphStyle}>  
-           I am a professional musician, budding photographer, wannabe writer/author, a developing full-stack developer, 
+           I am a professional musician and technical consultant, budding photographer, wannabe writer/author, 
+           a developing full-stack developer, 
            and most importantly husband and father. 
         </p>
         <p style={paragraphStyle}> 
@@ -36,17 +51,24 @@ const Home = () => (
            gain new skills and have the potential build amazing things.
         </p>
         <br />
-        <About id='about'/>
+
+        {/* Render Components */}
+        <About />
           <Divider />
-        {/* <Interests id='interests' /> */}
+
+        <Skills />
           <Divider />
-        <Contact id='contact' />
+        <Projects />
+        <Divider />
+        <Contact />
       </Container>
     </div>
   )
 
+
+
   const styleTitle = {
-    fontSize: 40,
+    fontSize: 45,
     textAlign: 'center',
     paddingTop: '10px'
   }
