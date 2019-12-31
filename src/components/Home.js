@@ -5,7 +5,7 @@ import Projects from './Projects'
 import Contact from './Contact'
 import { Divider, Header, Container, Segment, Image, Grid, } from 'semantic-ui-react'
 import trevor from './assets/trevor.jpg'
-import family from './assets/family.jpeg'
+import familypic from './assets/familypic.jpeg'
 
 // About page covering: Work history and Education
 const Home = () => (
@@ -30,7 +30,7 @@ const Home = () => (
           </Grid.Column> 
 
           <Grid.Column textAlign='center' verticalAlign='middle' only='computer tablet' >
-            <Image src={family} centered />  
+            <Image src={familypic} size='medium' centered />  
           </Grid.Column>   
         </Grid>
       </Segment>
