@@ -7,6 +7,9 @@ import semanticLogo from './assets/semantic.png'
 import railsLogo from './assets/rails.png'
 import react from './assets/react.png'
 import postgres from './assets/postgres.png'
+import htmllogo from './assets/html-logo.png'
+import csslogo from './assets/css3-logo.png'
+import wordpress from './assets/wordpress-logo.png'
 
 const Skills = () => (
   <div>
@@ -50,6 +53,20 @@ const Skills = () => (
           <Image src={postgres} size='small' />
         </Card.Content>
       </Card>
+
+      {/* HTML */}
+      <Card color='blue'>
+        <Card.Content style={skillStyle}>
+          <Image src={htmllogo} size='small' />
+        </Card.Content>
+      </Card>
+
+      {/* CSS */}
+      <Card color='blue'>
+        <Card.Content style={skillStyle}>
+          <Image src={csslogo} size='small' />
+        </Card.Content>
+      </Card>
     </Card.Group>
 
     {/* Software platforms */}
@@ -77,6 +94,13 @@ const Skills = () => (
       <Card color='blue'>
         <Card.Content style={skillStyle} >
           <Image src={lightroom} size='small' />
+        </Card.Content>
+      </Card>
+
+      {/* WordPress */}
+      <Card color='blue'>
+        <Card.Content style={skillStyle} >
+          <Image src={wordpress} size='small' />
         </Card.Content>
       </Card>
     </Card.Group>
