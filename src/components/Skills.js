@@ -1,14 +1,15 @@
 import React from 'react'
 import { Card, Header, Segment, Image, } from 'semantic-ui-react'
+// Images/Logos
+import csslogo from './assets/css3-logo.png'
 import domo from './assets/domo.png'
-import salesforce from './assets/sfdc.png'
+import htmllogo from './assets/html-logo.png'
 import lightroom from './assets/lightroom.png'
-import semanticLogo from './assets/semantic.png'
+import postgres from './assets/postgres.png'
 import railsLogo from './assets/rails.png'
 import react from './assets/react.png'
-import postgres from './assets/postgres.png'
-import htmllogo from './assets/html-logo.png'
-import csslogo from './assets/css3-logo.png'
+import salesforce from './assets/sfdc.png'
+import semanticLogo from './assets/semantic.png'
 import wordpress from './assets/wordpress-logo.png'
 
 const Skills = () => (
@@ -21,11 +22,13 @@ const Skills = () => (
 
     {/* Development languages and frameworks */}
     <Header style={subsectionStyle}>
-     Development
+      Development
     </Header>
-    <br/>
-    {/* Ruby on Rails */}
+    <br />
+
     <Card.Group itemsPerRow={4} doubling>
+      
+      {/* Ruby on Rails */}
       <Card color='blue'>
         <Card.Content style={skillStyle}>
           <Image src={railsLogo} size='small' />
