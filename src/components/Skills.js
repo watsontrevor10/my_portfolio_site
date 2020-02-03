@@ -11,6 +11,8 @@ import react from './assets/react.png'
 import salesforce from './assets/sfdc.png'
 import semanticLogo from './assets/semantic.png'
 import wordpress from './assets/wordpress-logo.png'
+import postman from './assets/postman.png'
+import sqlectron from './assets/sqlectron.png'
 
 const Skills = () => (
   <div>
@@ -104,6 +106,20 @@ const Skills = () => (
       <Card color='blue'>
         <Card.Content style={skillStyle} >
           <Image src={wordpress} size='small' />
+        </Card.Content>
+      </Card>
+
+      {/* Postman */}
+      <Card color='blue'>
+        <Card.Content style={skillStyle} >
+          <Image src={postman} size='small' />
+        </Card.Content>
+      </Card>
+
+      {/* SQLectron */}
+      <Card color='blue'>
+        <Card.Content style={skillStyle} >
+          <Image src={sqlectron} size='small' />
         </Card.Content>
       </Card>
     </Card.Group>

@@ -8,6 +8,20 @@ const Projects = () => (
         Projects
       </Header>
     </Segment>
+
+    <Header>
+      Key Projects
+    </Header>
+    <br/>
+    <Card.Group>
+      <Card 
+        header='DevPoint Seekr'
+        description="A jobs search tracking application.  It can be very difficult to keep track of all
+        of the many jobs you apply to, and manage all of the follow-up and scheduling, we built this to help
+        job Seekr's keep track of the job search process without using a complex spreadsheet or sticky notes."
+        color='red'
+      /> 
+    </Card.Group>
     
     {/* Future Projects */}
     <Header style={subsectionStyle}>
@@ -15,11 +29,6 @@ const Projects = () => (
     </Header>
     <br/>
     <Card.Group>
-      <Card 
-        header='DevPoint Capstone Project'
-        description='Coming in January 2020'
-        color='red'
-      />
       <Card 
         header='Music Lesson Manager'
         description='A CRM-like system for managing students of private music teaching studios. 
