@@ -18,7 +18,8 @@ const About = () => (
       </Header>
     </Segment>
     <br />
-    
+
+    {/* National Guard */}
     <Card.Group>
       <Card color='orange' raised fluid>
         <Card.Content>
@@ -42,6 +43,7 @@ const About = () => (
         </Card.Content>
       </Card>
 
+      {/* Filevine */}
       <Card color='orange' raised fluid >
         <Card.Content>
           <Image src={filevine} size='medium' floated='left' wrapped />
@@ -60,6 +62,8 @@ const About = () => (
           </Card.Description>
         </Card.Content>
       </Card>
+
+      {/* NUVI */}
       <Card color='orange' raised fluid >
         <Card.Content>
           <Image src={nuvi} size='small' floated='left' wrapped />
@@ -77,15 +81,14 @@ const About = () => (
         </Card.Content>
       </Card>
 
+      {/* InsideSales.com */}
       <Card color='orange' raised fluid>
         <Card.Content>
           <Image src={xant} size='small' floated='left' wrapped />
           <Card.Header>
-            <ul>
-              <li>Technical Support</li>
-              <li>Solutions Consultant</li>
-              <li>Solutions Consultanting Architect</li>
-            </ul>
+            <p>Technical Support</p>
+            <p>Solutions Consultant</p>
+            <p>Solutions Consultanting Architect</p>
           </Card.Header>
           <Divider />
           <Card.Description>
@@ -115,6 +118,8 @@ const About = () => (
       </Header>
     </Segment>
     <Card.Group>
+
+      {/* BYU */}
       <Card color='green'>
         <Card.Content textAlign='center' >
           <Image src={byulogo} size='tiny' />
@@ -125,6 +130,7 @@ const About = () => (
         </Card.Content>
       </Card>
 
+      {/* Army Music School */}
       <Card color='green'>
         <Card.Content textAlign='center'>
           <Image src={armylogo} size='tiny' />
@@ -139,17 +145,18 @@ const About = () => (
         </Card.Content>
       </Card>
 
+      {/* DPL */}
       <Card color='green'>
         <Card.Content textAlign='center' >
           <Image src={dpllogo} size='tiny' />
         </Card.Content>
         <Card.Content>
           <Card.Header>
-            DevPoint Labs - University of Utah
-            </Card.Header>
+            DevPoint Labs
+          </Card.Header>
           <Card.Meta>
-            Full-stack Web Development Certificate
-            </Card.Meta>
+            University of Utah Certificate in Full-stack Web Development 
+          </Card.Meta>
         </Card.Content>
       </Card>
     </Card.Group>
