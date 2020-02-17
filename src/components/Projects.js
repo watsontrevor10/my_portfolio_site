@@ -79,9 +79,9 @@ const Projects = () => (
   </div>
 )
 
-const subsectionStyle = {
-  textSize: 30,
-  textAlign: 'center'
-}
+// const subsectionStyle = {
+//   textSize: 30,
+//   textAlign: 'center'
+// }
 
 export default Projects
