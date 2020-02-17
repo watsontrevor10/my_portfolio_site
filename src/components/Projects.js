@@ -15,7 +15,7 @@ const Projects = () => (
     <Header style={subsectionStyle}>
       Full-Stack Applications
     </Header>
-    <br/>
+    <br />
     <Card.Group>
       {/* DPL Seekr */}
       <Card color='red'>
@@ -26,34 +26,28 @@ const Projects = () => (
           <Card.Meta>
             A jobs search tracking application
           </Card.Meta>
-          </Card.Content>
-          <Card.Content>
-          <Image  src={dpl_seekr} size='big' centered />
-          <br/>
+        </Card.Content>
+        <Card.Content>
+          <Image src={dpl_seekr} size='big' centered />
+          <br />
           <Card.Description>
-            My team of 7 DevPoint Labs students built this to help job seekers keep track of the 
+            My team of 7 DevPoint Labs students built this to help job seekers keep track of the
             job search process without using a complex spreadsheet or sticky notes.
           </Card.Description>
-          </Card.Content>
-          <Card.Content>
+        </Card.Content>
+        <Card.Content>
           <Card.Meta>
             Ruby on Rails | React.js | SASS/CSS | PostgreSQL | Recharts
           </Card.Meta>
-          <br/>
+          <br />
           <Label as='a' color='teal' image>
-          <a href='https://github.com/watsontrevor10/dpl-seekr' target='_blank' rel='noopener noreferrer'>
-            <Icon link name='github square'/>
-            GitHub
+            <a href='https://github.com/watsontrevor10/dpl-seekr' target='_blank' rel='noopener noreferrer'>
+              <Icon link name='github square' />
+              GitHub
           </a>
           </Label>
         </Card.Content>
-      </Card>   
-    </Card.Group>
-
-    <Header style={subsectionStyle}>
-      Other Projects
-    </Header>
-    <Card.Group>
+      </Card>
       {/* Star Wars Fan Site */}
       <Card color='red'>
         <Card.Content>
@@ -63,41 +57,29 @@ const Projects = () => (
           <Card.Meta>
             Simple app using SWAPI.co API
           </Card.Meta>
+        </Card.Content>
+        <Card.Content>
           <Image src={star_wars} size='medium' />
+          <Card.Description>
+            DevPoint Labs project, built in the space of an afternoon.
+            The main goal was to be able to pull info via external API and have a simple UI to view data, while exploring a new CSS library.
+          </Card.Description>
+        </Card.Content>
+        <Card.Content>
           <Card.Meta>
-            React.js | REST API | Grommet UI 
+            React.js | REST API | Grommet UI
           </Card.Meta>
-          <br/>
+          <br />
           <Label as='a' color='teal' image>
-          <a href='https://github.com/watsontrevor10/star_wars_fan_site' target='_blank' rel='noopener noreferrer'>
-            <Icon link name='github square'/>
-            GitHub
+            <a href='https://github.com/watsontrevor10/star_wars_fan_site' target='_blank' rel='noopener noreferrer'>
+              <Icon link name='github square' />
+              GitHub
           </a>
           </Label>
         </Card.Content>
       </Card>
     </Card.Group>
-    
-    {/* Future Projects */}
-    <Header style={subsectionStyle}>
-      Future Projects
-    </Header>
-    <br/>
-    <Card.Group>
-      <Card 
-        header='Music Lesson Manager'
-        description='A CRM-like system for managing students of private music teaching studios. 
-        Calendar management, contacts, invoicing, and payment tracking are the essentials for this app.'
-        color='red'
-      />
-      <Card 
-        header='Adventures with Jim'
-        description='A tour guide booking site for my father-in-law.  
-        Jim goes on the best adventures, and knows the best places that are well off the beaten path.'
-        color='red'
-      />
-      </Card.Group>
-  </div> 
+  </div>
 )
 
 const subsectionStyle = {
