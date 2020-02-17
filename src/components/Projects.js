@@ -11,12 +11,8 @@ const Projects = () => (
         Projects
       </Header>
     </Segment>
-
-    <Header style={subsectionStyle}>
-      Full-Stack Applications
-    </Header>
-    <br />
     <Card.Group>
+
       {/* DPL Seekr */}
       <Card color='red'>
         <Card.Content>
@@ -48,6 +44,7 @@ const Projects = () => (
           </Label>
         </Card.Content>
       </Card>
+
       {/* Star Wars Fan Site */}
       <Card color='red'>
         <Card.Content>
