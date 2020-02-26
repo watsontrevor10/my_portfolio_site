@@ -13,6 +13,7 @@ const Seekr = () => {
       >
         DevPoint Seekr
       </Header>
+      {/* Tour video embedded from YouTube */}
       <Embed
         id='Dps7caZ1CaQ'
         placeholder={dplseekr}

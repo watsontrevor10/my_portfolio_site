@@ -6,6 +6,7 @@ import dpl_seekr from './assets/dpl-seeker.png'
 import star_wars from './assets/star_wars.png'
 
 const Projects = () => {
+  // State and functions to toggle Seekr Modal
   const [seekr, setSeekr] = useState(false)
 
   const openSeekr = () => {
@@ -47,6 +48,7 @@ const Projects = () => {
               Ruby on Rails | React.js | SASS/CSS | PostgreSQL | Recharts | Heroku
           </Card.Meta>
             <br />
+            {/* Seekr tour modal */}
             <Modal
               trigger={
                 <Button
