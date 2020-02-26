@@ -5,6 +5,7 @@ import About from './components/About'
 import Interests from './components/Interests'
 import Contact from './components/Contact'
 import NoMatch from './components/NoMatch'
+import Seekr from './components/Seekr'
 import { Route, Switch, } from 'react-router-dom'
 
 
@@ -16,6 +17,7 @@ const App = () => (
         <Route exact path='/about' component={About} />
         <Route exact path='/interests' component={Interests} />
         <Route exact path='/contact' component={Contact} />
+        <Route exact path='/seekr' component={Seekr} />
         <Route component={NoMatch} />
       </Switch>
   </>
