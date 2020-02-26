@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Seekr from './Seekr'
-import { Button, Segment, Header, Card, Image, Label, Icon, Modal, Flag } from 'semantic-ui-react'
+import { Button, Segment, Header, Card, Image, Label, Icon, Modal, Transition } from 'semantic-ui-react'
 // Logos/Images
 import dpl_seekr from './assets/dpl-seeker.png'
 import star_wars from './assets/star_wars.png'
@@ -48,21 +48,24 @@ const Projects = () => {
               Ruby on Rails | React.js | SASS/CSS | PostgreSQL | Recharts
           </Card.Meta>
             <br />
-            <Modal
-              trigger={
-                <Button
-                  onClick={openSeekr}
-                  color='teal'
-                >
-                  See Demo
+            {/* <Transition visible={seekr} animation='scale' duration={500}> */}
+              <Modal
+                trigger={
+                  <Button
+                    onClick={openSeekr}
+                    color='teal'
+                  >
+                    See Demo
                 </Button>
 
-              }
-              open={seekr}
-              onClose={closeSeekr}
-            >
-              <Seekr />
-            </Modal>
+                }
+                open={seekr}
+                onClose={closeSeekr}
+              >
+                <Seekr />
+              </Modal>
+
+            {/* </Transition> */}
             <Label as='a' color='teal' image>
               <a href='https://github.com/watsontrevor10/dpl-seekr' target='_blank' rel='noopener noreferrer'>
                 <Icon link name='github square' />
