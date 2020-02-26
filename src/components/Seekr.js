@@ -28,15 +28,17 @@ const Seekr = () => {
           and upcoming tasks and interviews
         </p>
         <p>
-          While we worked together as a team or in pairs on most things, some of the modules I worked on the most were:
+          While we worked together as a team or in pairs on most things, some of the modules I contributed to most were:
         </p>
         <List>
           <List.Item>
             <List.Content>
-              <List.Header>The home page</List.Header>
+              <List.Header>Home/Graphs</List.Header>
             </List.Content>
             <List.Description>
-              I built most things on the main page, including all of the graphs, the filters that power the upcoming interviews and tasks modules.
+              This was one of my big projects on this app.  I built the graphs first using react-google-charts, 
+              but they were hard to manage and poorly documented, so I switched to Recharts.  I also used a combination of 
+              SQL, ActiveRecord and JavaScript to filter and sort results on this page. 
             </List.Description>
           </List.Item>
           <List.Item>
@@ -45,18 +47,15 @@ const Seekr = () => {
                 Tasks
               </List.Header>
               <List.Description>
-                This component was definitely a group effort, I spent a good amount of time and effort to refactor this component so that it would work more effcively
+                This component was definitely a group effort, I primarily refactored the componenet a few times as the app changed.
               </List.Description>
             </List.Content>
           </List.Item>
           <List.Item>
             <List.Content>
               <List.Header>
-                Notes and 
+                Notes and Contacts
               </List.Header>
-              <List.Description>
-
-              </List.Description>
             </List.Content>
           </List.Item>
         </List>
