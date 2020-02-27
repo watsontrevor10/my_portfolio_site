@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar'
 import Home from './components/Home'
-import About from './components/About'
+import Experience from './components/Experience'
 import Interests from './components/Interests'
 import Contact from './components/Contact'
 import NoMatch from './components/NoMatch'
@@ -15,7 +15,7 @@ const App = () => (
     <Navbar />
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/about' component={About} />
+        <Route exact path='/experience' component={Experience} />
         <Route exact path='/interests' component={Interests} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/seekr' component={Seekr} />

@@ -14,7 +14,7 @@ const Navbar = () => {
         <Dropdown item icon='bars' simple>
           <Dropdown.Menu>
             <Dropdown.Item>
-              <a href='#hist'>
+              <a href='#exp'>
                 <Menu.Item 
                   name='work'
                   active={activeItem === 'work'}
@@ -76,7 +76,7 @@ const Navbar = () => {
     // Navbar for larger screens
     return (
       <Menu size='tiny' compact attached='top' icon='labeled'>
-          <a href='#hist'>
+          <a href='#exp'>
             <Menu.Item 
               name='work'
               active={activeItem === 'work'}
