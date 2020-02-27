@@ -1,5 +1,5 @@
-import React from 'react'
-import { Card, Header, Segment, Image, } from 'semantic-ui-react'
+import React, { useState } from 'react'
+import { Card, Header, Segment, Image, Modal } from 'semantic-ui-react'
 // Images/Logos
 import csslogo from './assets/css3-logo.png'
 import domo from './assets/domo.png'
@@ -13,118 +13,133 @@ import semanticLogo from './assets/semantic.png'
 import wordpress from './assets/wordpress-logo.png'
 import postman from './assets/postman.png'
 import sqlectron from './assets/sqlectron.png'
+import DomoPreso from './DomoPreso'
 
-const Skills = () => (
-  <div>
-    <Segment inverted color='teal' size='huge'>
-      <Header as='h3' id='skills'>
-        Skills
+const Skills = () => {
+  const [domoPreso, setDomoPreso] = useState(false)
+
+  const toggleDomoPreso = () => {
+    setDomoPreso(!domoPreso)
+  }
+
+  return (
+    <div>
+      <Segment inverted color='teal' size='huge'>
+        <Header as='h3' id='skills'>
+          Skills
       </Header>
-    </Segment>
+      </Segment>
 
-    {/* Development languages and frameworks */}
-    <Header style={subsectionStyle}>
-      Development
+      {/* Development languages and frameworks */}
+      <Header style={subsectionStyle}>
+        Development
     </Header>
-    <br />
+      <br />
 
-    <Card.Group itemsPerRow={4} doubling>
-      
-      {/* Ruby on Rails */}
-      <Card color='blue'>
-        <Card.Content style={skillStyle}>
-          <Image src={railsLogo} size='small' />
-        </Card.Content>
-      </Card>
+      <Card.Group itemsPerRow={4} doubling>
 
-      {/* React.js */}
-      <Card color='blue'>
-        <Card.Content style={skillStyle}>
-          <Image src={react} size='small' />
-          {/* <h3>React.js</h3> */}
-        </Card.Content>
-      </Card>
+        {/* Ruby on Rails */}
+        <Card color='blue'>
+          <Card.Content style={skillStyle}>
+            <Image src={railsLogo} size='small' />
+          </Card.Content>
+        </Card>
 
-      {/* Semantic UI */}
-      <Card color='blue'>
-        <Card.Content style={skillStyle}>
-          <Image src={semanticLogo} size='small' />
-        </Card.Content>
-      </Card>
+        {/* React.js */}
+        <Card color='blue'>
+          <Card.Content style={skillStyle}>
+            <Image src={react} size='small' />
+            {/* <h3>React.js</h3> */}
+          </Card.Content>
+        </Card>
 
-      {/* Postgresql */}
-      <Card color='blue'>
-        <Card.Content style={skillStyle}>
-          <Image src={postgres} size='small' />
-        </Card.Content>
-      </Card>
+        {/* Postgresql */}
+        <Card color='blue'>
+          <Card.Content style={skillStyle}>
+            <Image src={postgres} size='small' />
+          </Card.Content>
+        </Card>
 
-      {/* HTML */}
-      <Card color='blue'>
-        <Card.Content style={skillStyle}>
-          <Image src={htmllogo} size='small' />
-        </Card.Content>
-      </Card>
+        {/* HTML */}
+        <Card color='blue'>
+          <Card.Content style={skillStyle}>
+            <Image src={htmllogo} size='small' />
+          </Card.Content>
+        </Card>
 
-      {/* CSS */}
-      <Card color='blue'>
-        <Card.Content style={skillStyle}>
-          <Image src={csslogo} size='small' />
-        </Card.Content>
-      </Card>
-    </Card.Group>
+        {/* CSS */}
+        <Card color='blue'>
+          <Card.Content style={skillStyle}>
+            <Image src={csslogo} size='small' />
+          </Card.Content>
+        </Card>
 
-    {/* Software platforms */}
-    <Header style={subsectionStyle}>
-      Platforms
+        {/* Semantic UI */}
+        <Card color='blue'>
+          <Card.Content style={skillStyle}>
+            <Image src={semanticLogo} size='small' />
+          </Card.Content>
+        </Card>
+      </Card.Group>
+
+      {/* Software platforms */}
+      <Header style={subsectionStyle}>
+        Platforms
     </Header>
 
-    <Card.Group itemsPerRow={4} doubling>
+      <Card.Group itemsPerRow={4} doubling>
 
-      {/* DOMO Analytics */}
-      <Card color='blue'>
-        <Card.Content style={skillStyle} >
-          <Image src={domo} size='small' />
-        </Card.Content>
-      </Card>
+        {/* DOMO Analytics */}
+        <Card color='blue' as='a' onClick={toggleDomoPreso}>
+          <Card.Content style={skillStyle} >
+            <Image src={domo} size='small' />
+          </Card.Content>
+          <Modal
+            open={domoPreso}
+            onClose={toggleDomoPreso}
+          >
+            <DomoPreso />
+          </Modal>
+        </Card>
 
-      {/* Salesforce */}
-      <Card color='blue'>
-        <Card.Content style={skillStyle} >
-          <Image src={salesforce} size='small' />
-        </Card.Content>
-      </Card>
+        {/* Salesforce */}
+        <Card color='blue'>
+          <Card.Content style={skillStyle} >
+            <Image src={salesforce} size='small' />
+          </Card.Content>
+        </Card>
 
-      {/* Lightroom */}
-      <Card color='blue'>
-        <Card.Content style={skillStyle} >
-          <Image src={lightroom} size='small' />
-        </Card.Content>
-      </Card>
+        {/* Lightroom */}
+        <Card color='blue'>
+          <Card.Content style={skillStyle} >
+            <Image src={lightroom} size='small' />
+          </Card.Content>
+        </Card>
 
-      {/* WordPress */}
-      <Card color='blue'>
-        <Card.Content style={skillStyle} >
-          <Image src={wordpress} size='small' />
-        </Card.Content>
-      </Card>
+        {/* WordPress */}
+        <Card color='blue'>
+          <Card.Content style={skillStyle} >
+            <Image src={wordpress} size='small' />
+          </Card.Content>
+        </Card>
 
-      {/* Postman */}
-      <Card color='blue'>
-        <Card.Content style={skillStyle} >
-          <Image src={postman} size='small' />
-        </Card.Content>
-      </Card>
+        {/* Postman */}
+        <Card color='blue'>
+          <Card.Content style={skillStyle} >
+            <Image src={postman} size='small' />
+          </Card.Content>
+        </Card>
 
-      {/* SQLectron */}
-      <Card color='blue'>
-        <Card.Content style={skillStyle} >
-          <Image src={sqlectron} size='small' />
-        </Card.Content>
-      </Card>
-    </Card.Group>
-  </div>
-)
+        {/* SQLectron */}
+        <Card color='blue'>
+          <Card.Content style={skillStyle} >
+            <Image src={sqlectron} size='small' />
+          </Card.Content>
+        </Card>
+      </Card.Group>
+    </div>
+  )
+}
 
 const skillStyle = {
   textAlign: 'center',
