@@ -14,28 +14,6 @@ const Navbar = () => {
         <Dropdown item icon='bars' simple>
           <Dropdown.Menu>
             <Dropdown.Item>
-              <a href='#exp'>
-                <Menu.Item 
-                  name='work'
-                  active={activeItem === 'work'}
-                  onClick={() => setActiveItem('work')}
-                >
-                  <Icon name='suitcase' />
-                </Menu.Item>
-              </a>
-            </Dropdown.Item>
-            <Dropdown.Item>
-              <a href='#edu'>
-                <Menu.Item 
-                  name='Education'
-                  active={activeItem === 'Education'}
-                  onClick={() => setActiveItem('Education')}
-                >
-                  <Icon name='graduation cap' />
-                </Menu.Item>
-              </a>
-            </Dropdown.Item>
-            <Dropdown.Item>
               <a href='#skills'>
                 <Menu.Item 
                   name='skills'
@@ -58,6 +36,28 @@ const Navbar = () => {
               </a>
             </Dropdown.Item>
             <Dropdown.Item>
+              <a href='#edu'>
+                <Menu.Item 
+                  name='Education'
+                  active={activeItem === 'Education'}
+                  onClick={() => setActiveItem('Education')}
+                >
+                  <Icon name='graduation cap' />
+                </Menu.Item>
+              </a>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <a href='#exp'>
+                <Menu.Item 
+                  name='work'
+                  active={activeItem === 'work'}
+                  onClick={() => setActiveItem('work')}
+                >
+                  <Icon name='suitcase' />
+                </Menu.Item>
+              </a>
+            </Dropdown.Item>
+            <Dropdown.Item>
               <a href='#contact'>
                 <Menu.Item 
                   name='Contact'
@@ -76,26 +76,6 @@ const Navbar = () => {
     // Navbar for larger screens
     return (
       <Menu size='tiny' compact attached='top' icon='labeled'>
-          <a href='#exp'>
-            <Menu.Item 
-              name='work'
-              active={activeItem === 'work'}
-              onClick={() => setActiveItem('work')}
-            >
-              <Icon name='suitcase' />
-              Work
-            </Menu.Item>
-          </a>
-          <a href='#edu'>
-            <Menu.Item 
-              name='Education'
-              active={activeItem === 'Education'}
-              onClick={() => setActiveItem('Education')}
-            >
-              <Icon name='graduation cap' />
-              Education
-            </Menu.Item>
-          </a>
           <a href='#skills'>
             <Menu.Item 
               name='skills'
@@ -115,6 +95,26 @@ const Navbar = () => {
               <Icon name='wrench' />  
               Projects
             </Menu.Item>    
+          </a>
+          <a href='#edu'>
+            <Menu.Item 
+              name='Education'
+              active={activeItem === 'Education'}
+              onClick={() => setActiveItem('Education')}
+            >
+              <Icon name='graduation cap' />
+              Education
+            </Menu.Item>
+          </a>
+          <a href='#exp'>
+            <Menu.Item 
+              name='work'
+              active={activeItem === 'work'}
+              onClick={() => setActiveItem('work')}
+            >
+              <Icon name='suitcase' />
+              Work
+            </Menu.Item>
           </a>
           <Menu.Menu position='right'>
             <a href='#contact'>
