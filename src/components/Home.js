@@ -3,6 +3,7 @@ import Experience from './Experience'
 import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
+import Education from './Education'
 import { Divider, Header, Container, Segment, Image, Grid, } from 'semantic-ui-react'
 import trevor from './assets/trevor.jpg'
 import familypic from './assets/familypic.jpeg'
@@ -58,6 +59,8 @@ const Home = () => (
       <Skills />
       <Divider />
       <Projects />
+      <Divider />
+      <Education />
       <Divider />
       <Experience />
       <Divider />
